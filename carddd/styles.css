@@ -1,0 +1,51 @@
+body {
+    background-color: green;
+    box-sizing: border-box;
+}
+.card {
+    text-align: center;
+    background-color: white;
+    height: 450px;
+    width: 340px;
+    margin: auto;
+    padding: 30px;
+    padding-top: 300px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+    font-size: 80px;
+}
+.top {
+    position: absolute;
+    bottom:20px;
+    right: 20px;
+    font-size:80px;
+  }   
+.bot {
+    position: absolute;
+    top: 20px; 
+    left: 20px;
+    font-size:80px;
+    }
+
+.spades::before, .spade:after{ content: '\2660';}
+.clubs::before, .clubs:after{ content: '\2663';}
+.hearts::before, .hearts:after{ content: '\2665'; color: red;}
+.diams::before, .diams:after{ content: '\2666'; color: red;}
+
+.spades::before,.clubs::before,.hearts::before,.diams::before{
+    position: absolute;
+    top: 20px; 
+    left: 20px;
+    font-size:80px;
+    
+}
+.spades:after,.clubs:after,.hearts:after,.diams:after{
+    position: absolute;
+bottom:20px;
+right: 20px;
+font-size:80px;
+transform: rotate(180deg);
+}
+
